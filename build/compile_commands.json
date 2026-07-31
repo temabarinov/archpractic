@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/habdulila/Desktop/practic/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/thread1.dir/thread/thread1.cpp.o -c /home/habdulila/Desktop/practic/thread/thread1.cpp",
+  "file": "/home/habdulila/Desktop/practic/thread/thread1.cpp",
+  "output": "/home/habdulila/Desktop/practic/build/CMakeFiles/thread1.dir/thread/thread1.cpp.o"
+},
+{
+  "directory": "/home/habdulila/Desktop/practic/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/thread2.dir/thread/thread2.cpp.o -c /home/habdulila/Desktop/practic/thread/thread2.cpp",
+  "file": "/home/habdulila/Desktop/practic/thread/thread2.cpp",
+  "output": "/home/habdulila/Desktop/practic/build/CMakeFiles/thread2.dir/thread/thread2.cpp.o"
+}
+]
