@@ -65,11 +65,13 @@ CMAKE_BINARY_DIR = /home/habdulila/Desktop/practic/build
 # The main recursive "all" target.
 all: CMakeFiles/thread1.dir/all
 all: CMakeFiles/thread2.dir/all
+all: CMakeFiles/psql1.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/thread1.dir/codegen
 codegen: CMakeFiles/thread2.dir/codegen
+codegen: CMakeFiles/psql1.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,6 +81,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/thread1.dir/clean
 clean: CMakeFiles/thread2.dir/clean
+clean: CMakeFiles/psql1.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,7 +91,7 @@ clean: CMakeFiles/thread2.dir/clean
 CMakeFiles/thread1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread1.dir/build.make CMakeFiles/thread1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread1.dir/build.make CMakeFiles/thread1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=1,2 "Built target thread1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=3,4 "Built target thread1"
 .PHONY : CMakeFiles/thread1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,7 +108,7 @@ thread1: CMakeFiles/thread1.dir/rule
 # codegen rule for target.
 CMakeFiles/thread1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread1.dir/build.make CMakeFiles/thread1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=1,2 "Finished codegen for target thread1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=3,4 "Finished codegen for target thread1"
 .PHONY : CMakeFiles/thread1.dir/codegen
 
 # clean rule for target.
@@ -120,7 +123,7 @@ CMakeFiles/thread1.dir/clean:
 CMakeFiles/thread2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=3,4 "Built target thread2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=5,6 "Built target thread2"
 .PHONY : CMakeFiles/thread2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,13 +140,45 @@ thread2: CMakeFiles/thread2.dir/rule
 # codegen rule for target.
 CMakeFiles/thread2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=3,4 "Finished codegen for target thread2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=5,6 "Finished codegen for target thread2"
 .PHONY : CMakeFiles/thread2.dir/codegen
 
 # clean rule for target.
 CMakeFiles/thread2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/clean
 .PHONY : CMakeFiles/thread2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/psql1.dir
+
+# All Build rule for target.
+CMakeFiles/psql1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=1,2 "Built target psql1"
+.PHONY : CMakeFiles/psql1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/psql1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/habdulila/Desktop/practic/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/psql1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/habdulila/Desktop/practic/build/CMakeFiles 0
+.PHONY : CMakeFiles/psql1.dir/rule
+
+# Convenience name for target.
+psql1: CMakeFiles/psql1.dir/rule
+.PHONY : psql1
+
+# codegen rule for target.
+CMakeFiles/psql1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=1,2 "Finished codegen for target psql1"
+.PHONY : CMakeFiles/psql1.dir/codegen
+
+# clean rule for target.
+CMakeFiles/psql1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/clean
+.PHONY : CMakeFiles/psql1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

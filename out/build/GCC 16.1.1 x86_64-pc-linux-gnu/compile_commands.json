@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/thread1.dir/thread/thread1.cpp.o -c /home/habdulila/Desktop/practic/thread/thread1.cpp",
+  "file": "/home/habdulila/Desktop/practic/thread/thread1.cpp",
+  "output": "CMakeFiles/thread1.dir/thread/thread1.cpp.o"
+},
+{
+  "directory": "/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/thread2.dir/thread/thread2.cpp.o -c /home/habdulila/Desktop/practic/thread/thread2.cpp",
+  "file": "/home/habdulila/Desktop/practic/thread/thread2.cpp",
+  "output": "CMakeFiles/thread2.dir/thread/thread2.cpp.o"
+},
+{
+  "directory": "/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu",
+  "command": "/usr/bin/g++ -DPQXX_SHARED  -g -std=gnu++20 -o CMakeFiles/psql1.dir/wt/psql1.cpp.o -c /home/habdulila/Desktop/practic/wt/psql1.cpp",
+  "file": "/home/habdulila/Desktop/practic/wt/psql1.cpp",
+  "output": "CMakeFiles/psql1.dir/wt/psql1.cpp.o"
+}
+]

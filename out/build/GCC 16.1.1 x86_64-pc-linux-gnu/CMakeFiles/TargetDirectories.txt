@@ -1,0 +1,5 @@
+/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu/CMakeFiles/thread1.dir
+/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu/CMakeFiles/thread2.dir
+/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu/CMakeFiles/psql1.dir
+/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu/CMakeFiles/edit_cache.dir
+/home/habdulila/Desktop/practic/out/build/GCC 16.1.1 x86_64-pc-linux-gnu/CMakeFiles/rebuild_cache.dir

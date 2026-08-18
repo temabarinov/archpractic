@@ -142,6 +142,19 @@ thread2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/build
 .PHONY : thread2/fast
 
+#=============================================================================
+# Target rules for targets named psql1
+
+# Build rule for target.
+psql1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psql1
+.PHONY : psql1
+
+# fast build rule for target.
+psql1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/build
+.PHONY : psql1/fast
+
 thread/thread1.o: thread/thread1.cpp.o
 .PHONY : thread/thread1.o
 
@@ -190,6 +203,30 @@ thread/thread2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/thread/thread2.cpp.s
 .PHONY : thread/thread2.cpp.s
 
+wt/psql1.o: wt/psql1.cpp.o
+.PHONY : wt/psql1.o
+
+# target to build an object file
+wt/psql1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/wt/psql1.cpp.o
+.PHONY : wt/psql1.cpp.o
+
+wt/psql1.i: wt/psql1.cpp.i
+.PHONY : wt/psql1.i
+
+# target to preprocess a source file
+wt/psql1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/wt/psql1.cpp.i
+.PHONY : wt/psql1.cpp.i
+
+wt/psql1.s: wt/psql1.cpp.s
+.PHONY : wt/psql1.s
+
+# target to generate assembly for a file
+wt/psql1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/wt/psql1.cpp.s
+.PHONY : wt/psql1.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +235,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... psql1"
 	@echo "... thread1"
 	@echo "... thread2"
 	@echo "... thread/thread1.o"
@@ -206,6 +244,9 @@ help:
 	@echo "... thread/thread2.o"
 	@echo "... thread/thread2.i"
 	@echo "... thread/thread2.s"
+	@echo "... wt/psql1.o"
+	@echo "... wt/psql1.i"
+	@echo "... wt/psql1.s"
 .PHONY : help
 
 

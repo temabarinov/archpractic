@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/thread1.dir/link.d CMakeFiles/thread1.dir/thread/thread1.cpp.o -o thread1

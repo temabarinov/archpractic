@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/psql1.dir/link.d CMakeFiles/psql1.dir/wt/psql1.cpp.o -o psql1  /usr/lib/libpqxx-8.0.so
