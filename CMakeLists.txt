@@ -10,6 +10,7 @@ find_package(libpqxx REQUIRED)
 add_executable(thread1 thread/thread1.cpp)
 add_executable(thread2 thread/thread2.cpp)
 
+
 add_executable(psql1 wt/psql1.cpp)
 
 target_link_libraries(psql1 PRIVATE libpqxx::pqxx)

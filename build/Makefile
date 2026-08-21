@@ -143,6 +143,19 @@ thread2/fast:
 .PHONY : thread2/fast
 
 #=============================================================================
+# Target rules for targets named yandextest
+
+# Build rule for target.
+yandextest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yandextest
+.PHONY : yandextest
+
+# fast build rule for target.
+yandextest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/build
+.PHONY : yandextest/fast
+
+#=============================================================================
 # Target rules for targets named psql1
 
 # Build rule for target.
@@ -227,6 +240,30 @@ wt/psql1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/psql1.dir/build.make CMakeFiles/psql1.dir/wt/psql1.cpp.s
 .PHONY : wt/psql1.cpp.s
 
+yandextest.o: yandextest.cpp.o
+.PHONY : yandextest.o
+
+# target to build an object file
+yandextest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/yandextest.cpp.o
+.PHONY : yandextest.cpp.o
+
+yandextest.i: yandextest.cpp.i
+.PHONY : yandextest.i
+
+# target to preprocess a source file
+yandextest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/yandextest.cpp.i
+.PHONY : yandextest.cpp.i
+
+yandextest.s: yandextest.cpp.s
+.PHONY : yandextest.s
+
+# target to generate assembly for a file
+yandextest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/yandextest.cpp.s
+.PHONY : yandextest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,6 +275,7 @@ help:
 	@echo "... psql1"
 	@echo "... thread1"
 	@echo "... thread2"
+	@echo "... yandextest"
 	@echo "... thread/thread1.o"
 	@echo "... thread/thread1.i"
 	@echo "... thread/thread1.s"
@@ -247,6 +285,9 @@ help:
 	@echo "... wt/psql1.o"
 	@echo "... wt/psql1.i"
 	@echo "... wt/psql1.s"
+	@echo "... yandextest.o"
+	@echo "... yandextest.i"
+	@echo "... yandextest.s"
 .PHONY : help
 
 

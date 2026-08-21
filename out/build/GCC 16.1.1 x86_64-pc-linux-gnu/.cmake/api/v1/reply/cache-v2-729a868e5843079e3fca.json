@@ -219,10 +219,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Full path to the compiler used for language <LANG>. Set by CMake during compiler detection on the first configure; users may override on the command line to select a specific toolchain."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "/usr/bin/g++"
 		},
 		{

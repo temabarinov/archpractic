@@ -65,12 +65,14 @@ CMAKE_BINARY_DIR = /home/habdulila/Desktop/practic/build
 # The main recursive "all" target.
 all: CMakeFiles/thread1.dir/all
 all: CMakeFiles/thread2.dir/all
+all: CMakeFiles/yandextest.dir/all
 all: CMakeFiles/psql1.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/thread1.dir/codegen
 codegen: CMakeFiles/thread2.dir/codegen
+codegen: CMakeFiles/yandextest.dir/codegen
 codegen: CMakeFiles/psql1.dir/codegen
 .PHONY : codegen
 
@@ -81,6 +83,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/thread1.dir/clean
 clean: CMakeFiles/thread2.dir/clean
+clean: CMakeFiles/yandextest.dir/clean
 clean: CMakeFiles/psql1.dir/clean
 .PHONY : clean
 
@@ -147,6 +150,38 @@ CMakeFiles/thread2.dir/codegen:
 CMakeFiles/thread2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread2.dir/build.make CMakeFiles/thread2.dir/clean
 .PHONY : CMakeFiles/thread2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/yandextest.dir
+
+# All Build rule for target.
+CMakeFiles/yandextest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=7,8 "Built target yandextest"
+.PHONY : CMakeFiles/yandextest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/yandextest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/habdulila/Desktop/practic/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/yandextest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/habdulila/Desktop/practic/build/CMakeFiles 0
+.PHONY : CMakeFiles/yandextest.dir/rule
+
+# Convenience name for target.
+yandextest: CMakeFiles/yandextest.dir/rule
+.PHONY : yandextest
+
+# codegen rule for target.
+CMakeFiles/yandextest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/habdulila/Desktop/practic/build/CMakeFiles --progress-num=7,8 "Finished codegen for target yandextest"
+.PHONY : CMakeFiles/yandextest.dir/codegen
+
+# clean rule for target.
+CMakeFiles/yandextest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yandextest.dir/build.make CMakeFiles/yandextest.dir/clean
+.PHONY : CMakeFiles/yandextest.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/psql1.dir

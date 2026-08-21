@@ -41,9 +41,6 @@ public:
     pqxx::work tx{conn};
     tx.exec("update clients set email='" + tx.esc(newemail) + "' where name='"+ tx.esc(name) + "' and lastname='" + tx.esc(lastname) + "';");
     tx.commit();
-
-
-
   }
 
   void deletenumber(std::string number){
@@ -58,34 +55,32 @@ public:
     tx.commit();
   }
 
-  void findClientName(std::string name){
+std::vector<int> findClientName(std::string name){
+    std::vector<int> res;
     pqxx::work tx{conn};
-    for (auto[id,name,lastname,email] : tx.query<int,std::string,std::string,std::string>("select id,name,lastname,email from clients where name='" + tx.esc(name) + "';")){
-        std::cout<<id << " " << name << " " << lastname << " " << email<<std::endl;
+    for (auto[id] : tx.query<int>("select id,name,lastname,email from clients where name='" + tx.esc(name) + "';")){
+        res.push_back(id);
     }
     tx.commit();
-    
-
+    return res;
   }
-  void findClientLastname(std::string lastname){
+  std::vector<int> findClientLastname(std::string lastname){
+    std::vector<int> res;
     pqxx::work tx{conn};
-    for (auto[id,name,lastname,email] : tx.query<int,std::string,std::string,std::string>("select id,name,lastname,email from clients where lastname='" + tx.esc(lastname) + "';")){
-        std::cout<<id << " " << name << " " << lastname << " " << email<<std::endl;
+    for (auto[id] : tx.query<int>("select id,name,lastname,email from clients where lastname='" + tx.esc(lastname) + "';")){
+        res.push_back(id);
     }
     tx.commit();
-
-
-
+    return res;
   }
-  void findClientemail(std::string email){
+ std::vector<int> findClientemail(std::string email){
+  std::vector<int> res;
     pqxx::work tx{conn};
-    for (auto[id,name,lastname,email] : tx.query<int,std::string,std::string,std::string>("select id,name,lastname,email from clients where email='" + tx.esc(email) + "';")){
-        std::cout<<id << " " << name << " " << lastname << " " << email<<std::endl;
+    for (auto[id] : tx.query<int>("select id from clients where email='" + tx.esc(email) + "';")){
+        res.push_back(id);
     }
     tx.commit();
-
-
-
+    return res;
   }
 };
 int main() {

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/yandextest.dir/link.d CMakeFiles/yandextest.dir/yandextest.cpp.o -o yandextest

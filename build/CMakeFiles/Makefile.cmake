@@ -121,5 +121,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/thread1.dir/DependInfo.cmake"
   "CMakeFiles/thread2.dir/DependInfo.cmake"
+  "CMakeFiles/yandextest.dir/DependInfo.cmake"
   "CMakeFiles/psql1.dir/DependInfo.cmake"
   )

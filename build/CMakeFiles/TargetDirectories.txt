@@ -1,5 +1,6 @@
 /home/habdulila/Desktop/practic/build/CMakeFiles/thread1.dir
 /home/habdulila/Desktop/practic/build/CMakeFiles/thread2.dir
+/home/habdulila/Desktop/practic/build/CMakeFiles/yandextest.dir
 /home/habdulila/Desktop/practic/build/CMakeFiles/psql1.dir
 /home/habdulila/Desktop/practic/build/CMakeFiles/edit_cache.dir
 /home/habdulila/Desktop/practic/build/CMakeFiles/rebuild_cache.dir
